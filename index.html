@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="https://i.postimg.cc/9fqYVvxh/logo.png" type="image/x-icon">
+</head>
+<body>
+    <main>
+        <aside class="sidebar " data-sidebar>
+            <div class="sidebar-info">
+                <figure class="avatar-box">
+                    <img src="mydp.jpg" alt="Nitesh Singh" width="80">
+                </figure>
+
+                <div class="info-content">
+                    <h1 class="name" title="Nitesh Singh">Nitesh Singh</h1>
+                    <p class="title">Software Developer</p>
+                </div>
+
+                <button class="info-more-btn" data-sidebar-btn>
+                    <span>Show Contacts</span>
+                    <ion-icon name="chevron-down"></ion-icon>
+                </button>
+            </div>
+
+            <div class="sidebar-info-more">
+                <div class="separator"></div>
+
+                <ul class="contacts-list">
+                    <li class="contact-item">
+                        <div class="icon-box">
+                            <ion-icon name="mail-outline"></ion-icon>
+                        </div>
+
+                        <div class="contact-info">
+                            <p class="contact-title">Email</p>
+                            <a href="mailto:niteshsingh22032004@gmail.com" class="contact-link">niteshsingh22032004@gmail.com</a>
+                        </div>
+                    </li>
+
+                    <li class="contact-item">
+                        <div class="icon-box">
+                            <ion-icon name="phone-portrait-outline"></ion-icon>
+                        </div>
+
+                        <div class="contact-info">
+                            <p class="contact-title">Phone</p>
+                            <p class="contact-link">+91 9983643777</p>
+                        </div>
+                    </li>
+
+                    <li class="contact-item">
+                        <div class="icon-box">
+                            <ion-icon name="location-outline"></ion-icon>
+                        </div>
+
+                        <div class="contact-info">
+                            <p class="contact-title">Location</p>
+                            <p class="contact-link">Jaipur, Rajasthan, India</p>
+                        </div>
+                    </li>
+                </ul>
+
+                <div class="separator"></div>
+
+                <ul class="social-list">
+                    <li class="social-item"><a href="https://github.com/nitesh2203" target="_blank" class="social-link"><ion-icon name="logo-github"></ion-icon></a></li>
+                    <li class="social-item"><a href="https://leetcode.com/nitesh2203" target="_blank" class="social-link"><ion-icon name="code-working-outline"></ion-icon></a></li>
+                    <li class="social-item"><a href="https://www.linkedin.com/in/nitesh-singh-50120a289" target="_blank" class="social-link"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+                    <li class="social-item"><a href="https://www.instagram.com/niteshhwho" target="_blank" class="social-link"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                </ul>
+            </div>
+        </aside>
+
+        <div class="main-content">
+            <nav class="navbar">
+                <ul class="navbar-list">
+                    <li class="navbar-item"><button class="navbar-link active" data-nav-link>About</button></li>
+                    <li class="navbar-item"><button class="navbar-link" data-nav-link>Resume</button></li>
+                    <li class="navbar-item"><button class="navbar-link" data-nav-link>Project</button></li>
+                    <li class="navbar-item"><button class="navbar-link" data-nav-link>Experience</button></li>
+                    <!-- <li class="navbar-item"><button class="navbar-link" data-nav-link>Blog</button></li> -->
+                    <li class="navbar-item"><button class="navbar-link" data-nav-link>Contact</button></li>
+                </ul>
+            </nav>
+
+            <article class="about active" data-page="about">
+                <header>
+                    <h2 class="h2 article-title">About me</h2>
+                </header>
+
+                <section class="about-text">
+                    <p>I'm a final year engineering student with a strong foundation in Frontend Development. I have hands-on experience with React.js, HTML5, CSS3, Tailwind CSS, and JavaScript.</p>
+                    <p>Alongside frontend skills, I also have a solid understanding of Backend Technologies including Node.js, Express.js, and MongoDB. I understand the importance of authentication and the smooth integration between frontend and backend. This enables me to collaborate effectively with both backend developers and UI/UX designers, ensuring technical alignment and successful project delivery.</p>
+                </section>
+
+                <section class="service">
+                    <h3 class="h3 service-title">What I'm doing</h3>
+
+                    <ul class="service-list">
+                        <li class="service-item">
+                            <div class="service-icon-box">
+                                <img src="https://i.postimg.cc/ZqgqrqzG/icon-dev.png" alt="development icon" width="40">
+                            </div>
+
+                            <div class="service-content-box">
+                                <h4 class="h4 service-item-title">Development</h4>
+                                <p class="service-item-text">Building responsive and scalable applications using modern technologies.</p>
+                            </div>
+                        </li>
+
+                        <li class="service-item">
+                            <div class="service-icon-box">
+                                <img src="cp.png" alt="competitive programming icon" width="40">
+                            </div>
+
+                            <div class="service-content-box">
+                                <h4 class="h4 service-item-title">Competitive Programming</h4>
+                                <p class="service-item-text">Solving complex algorithmic problems and participating in coding competitions.</p>
+                            </div>
+                        </li>
+
+                        <li class="service-item">
+                            <div class="service-icon-box">
+                                <img src="FL.jpeg" alt="freelancing icon" width="40">
+                            </div>
+
+                            <div class="service-content-box">
+                                <h4 class="h4 service-item-title">Freelancing</h4>
+                                <p class="service-item-text">Providing professional development services and solutions to clients worldwide.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+
+                <div class="modal-container " data-modal-container>
+                    <div class="overlay " data-overlay></div>
+
+                    <section class="testimonials-modal">
+                        <button class="modal-close-btn" data-modal-close-btn><ion-icon name="close-outline"></ion-icon></button>
+
+                        <div class="modal-img-wrapper">
+                            <figure class="modal-avatar-box">
+                                <img src="https://i.postimg.cc/zGDHfn3G/avatar-1.png" alt="Daniel Lewis" width="80" data-modal-img>
+                            </figure>
+
+                            <img src="https://i.postimg.cc/mZ00RwX7/icon-quote.png" alt="quote icon">
+                        </div>
+
+                        <div class="modal-content">
+                            <h4 class="h3 modal-title" data-modal-title>Daniel Lewis</h4>
+                            <time datetime="2023-06-14">14 June, 2023</time>
+
+                            <div class="modal-text" data-modal-text>
+                                <p>Richard was hired to create a corporate identity. It's modern, clean and with a beautiful design that got a lot of praises from colleagues and visitors. We were very pleased with the work done. He has a lot of experience and is very concerned about the needs of client.</p>
+                            </div> <section class="timeline">
+                                <div class="title-wrapper">
+                                    <div class="icon-box"><ion-icon name="briefcase-outline"></ion-icon></div>
+                                    <h3 class="h3">Celebal Technologies</h3>
+                                </div>
+            
+                                <ol class="timeline-list">
+                                    <li class="timeline-item">
+                                        <h4 class="h4 timeline-item-title">Node.js</h4>
+                                        <span>May 2025 – Present, Jaipur, Rajasthan</span>
+                                        <p class="timeline-text">
+                                            • Working on backend development using Node.js and Express.js.<br>
+                                            • Implementing RESTful APIs and database integration.<br>
+                                            • Collaborating with the team on various projects and learning industry best practices.
+                                        </p>
+                                    </li>
+                                </ol>
+                            </section> <section class="timeline">
+                                <div class="title-wrapper">
+                                    <div class="icon-box"><ion-icon name="briefcase-outline"></ion-icon></div>
+                                    <h3 class="h3">Celebal Technologies</h3>
+                                </div>
+            
+                                <ol class="timeline-list">
+                                    <li class="timeline-item">
+                                        <h4 class="h4 timeline-item-title">Node.js</h4>
+                                        <span>May 2025 – Present, Jaipur, Rajasthan</span>
+                                        <p class="timeline-text">
+                                            • Working on backend development using Node.js and Express.js.<br>
+                                            • Implementing RESTful APIs and database integration.<br>
+                                            • Collaborating with the team on various projects and learning industry best practices.
+                                        </p>
+                                    </li>
+                                </ol>
+                            </section> <section class="timeline">
+                                <div class="title-wrapper">
+                                    <div class="icon-box"><ion-icon name="briefcase-outline"></ion-icon></div>
+                                    <h3 class="h3">Celebal Technologies</h3>
+                                </div>
+            
+                                <ol class="timeline-list">
+                                    <li class="timeline-item">
+                                        <h4 class="h4 timeline-item-title">Node.js</h4>
+                                        <span>May 2025 – Present, Jaipur, Rajasthan</span>
+                                        <p class="timeline-text">
+                                            • Working on backend development using Node.js and Express.js.<br>
+                                            • Implementing RESTful APIs and database integration.<br>
+                                            • Collaborating with the team on various projects and learning industry best practices.
+                                        </p>
+                                    </li>
+                                </ol>
+                            </section> <section class="timeline">
+                                <div class="title-wrapper">
+                                    <div class="icon-box"><ion-icon name="briefcase-outline"></ion-icon></div>
+                                    <h3 class="h3">Celebal Technologies</h3>
+                                </div>
+            
+                                <ol class="timeline-list">
+                                    <li class="timeline-item">
+                                        <h4 class="h4 timeline-item-title">Node.js</h4>
+                                        <span>May 2025 – Present, Jaipur, Rajasthan</span>
+                                        <p class="timeline-text">
+                                            • Working on backend development using Node.js and Express.js.<br>
+                                            • Implementing RESTful APIs and database integration.<br>
+                                            • Collaborating with the team on various projects and learning industry best practices.
+                                        </p>
+                                    </li>
+                                </ol>
+                            </section>
+                        </div>
+                    </section>
+                </div>
+            </article>
+            
+            <article class="resume " data-page="resume">
+                <header>
+                    <h2 class="h2 article-title">Resume</h2>
+                </header>
+
+                <div class="resume-download-container">
+                    <a href="https://drive.google.com/file/d/1ux0v-AhTo09bG3x9gAAm3PcRRvDBPYEU/view?usp=sharing" target="_blank" class="resume-download-btn">
+                        <ion-icon name="download-outline"></ion-icon>
+                        <span>Download Resume</span>
+                    </a>
+                </div>
+
+                <section class="timeline">
+                    <div class="title-wrapper">
+                        <div class="icon-box"><ion-icon name="code-slash-outline"></ion-icon></div>
+                        <h3 class="h3">Technical Skills</h3>
+                    </div>
+                    <ul class="skills-list">
+                        <li class="skills-item"><strong>Languages:</strong> Java, HTML, CSS, JavaScript</li>
+                        <li class="skills-item"><strong>Developer Tools:</strong> Git, GitHub, Postman, Rest API, Render, IntelliJ IDEA, VS Code</li>
+                        <li class="skills-item"><strong>Technologies/Frameworks:</strong> React JS, Redux, Context API, Tailwind CSS, Node.js, Express.js</li>
+                        <li class="skills-item"><strong>Database:</strong> MySQL, MongoDB</li>
+                        <li class="skills-item"><strong>CS Fundamentals:</strong> OOPs, DBMS</li>
+                    </ul>
+                </section>
+
+                <section class="timeline">
+                    <div class="title-wrapper">
+                        <div class="icon-box"><ion-icon name="briefcase-outline"></ion-icon></div>
+                        <h3 class="h3">Experience</h3>
+                    </div>
+                    <ol class="timeline-list">
+                        <li class="timeline-item">
+                            <h4 class="h4 timeline-item-title">Mahaveer Enterprises</h4>
+                            <span>Feb 2025 – May 2025, Mumbai, Maharashtra</span>
+                            <p class="timeline-text">
+                                <ul>
+                                    <li> • Developed a responsive product showcase website from scratch using HTML5, CSS3, and JavaScript.</li>
+                                    <li> • Gained hands-on experience in real-world UI/UX implementation and responsive design principles.</li>
+                                    <li> • Implemented and managed 500+ products on the platform with structured layouts, categories, and interactive features.</li>
+                                </ul>
+                            </p>
+                        </li>
+
+                        <li class="timeline-item">
+                            <h4 class="h4 timeline-item-title">Celebal Technologies</h4>
+                            <span>May 2025 – July 2025, Jaipur, Rajasthan</span>
+                            <p class="timeline-text">
+                                • Gained hands-on experience with Node.js and core Express.js concepts for building scalable backend applications.<br>
+                                • Implemented JWT authentication to secure APIs and manage user sessions effectively.<br>
+                                • Built a Collaborative Code Editor as the final project, featuring real-time multi-user editing, code synchronization, and secure access control using Node.js, Express.js, and WebSockets.
+                            </p>
+                        </li>
+                    </ol>
+                </section>
+
+                <section class="timeline">
+                    <div class="title-wrapper">
+                        <div class="icon-box"><ion-icon name="code-slash-outline"></ion-icon></div>
+                        <h3 class="h3">Projects</h3>
+                    </div>
+                    <ol class="timeline-list">
+                        <li class="timeline-item">
+                            <h4 class="h4 timeline-item-title">SynCode (Node.js Internship Project)</h4>
+                            <p class="timeline-text">
+                                • Built and deployed a real-time collaborative code editor using Node.js, Express.js, and WebSockets, enabling multiple users to edit simultaneously.<br>
+                                • Integrated JDoodle API for code execution and Monaco Editor for enhanced code editing experience.<br>
+                                • Implemented JWT authentication, session-based collaboration rooms, and dark/light theme support.
+                            </p>
+                        </li>
+                        <li class="timeline-item">
+                            <h4 class="h4 timeline-item-title">Chatty</h4>
+                            <p class="timeline-text">
+                                • Developed and deployed a full-stack chat application using React.js, Node.js, and MongoDB with real-time messaging using Socket.io.<br>
+                                • Implemented JWT-based authentication with cookie management and utilized Cloudinary for image uploads.<br>
+                                • Implemented real-time messaging with WebSockets for seamless one-to-one and group conversations.<br>
+                                • Enhanced user experience with 32 customizable themes using daisyUI.<br>
+                                • Designed and optimized MongoDB database schemas for efficient storage and retrieval of chat history.
+                            </p>
+                        </li>
+                        <li class="timeline-item">
+                            <h4 class="h4 timeline-item-title">Burger Beasts</h4>
+                            <p class="timeline-text">
+                                • Developed a dynamic homepage for Burger Beast using React.js, creating an engaging and responsive user interface that adapts seamlessly across devices.<br>
+                                • Implemented React Router to enable smooth navigation and enhance user experience, ensuring easy access to various sections of the website.<br>
+                                • Added interactive UI components with React Bootstrap, enhancing the visual appeal and user experience.
+                            </p>
+                        </li>
+                        <li class="timeline-item">
+                            <h4 class="h4 timeline-item-title">Spotify Clone</h4>
+                            <p class="timeline-text">
+                                • Developed a full-stack Spotify clone using React.js, Node.js, and MongoDB.<br>
+                                • Integrated Spotify API for music playback and authentication.<br>
+                                • Implemented user authentication and authorization using JWT.<br>
+                                • Utilized Cloudinary for image uploads and storage.
+                            </p>
+                        </li>
+                        <li class="timeline-item">
+                            <h4 class="h4 timeline-item-title">Virtual Garden</h4>
+                            <p class="timeline-text">
+                                • Developed a responsive and interactive virtual garden using React.js and CSS3.<br>
+                                • Integrated real-time data updates and user interactions.<br>
+                                • Implemented backend functionality using Node.js and MongoDB.
+                            </p>
+                        </li>
+                    </ol>
+                </section>
+
+                <section class="timeline">
+                    <div class="title-wrapper">
+                        <div class="icon-box"><ion-icon name="book-outline"></ion-icon></div>
+                        <h3 class="h3">Education</h3>
+                    </div>
+                    <ol class="timeline-list">
+                        <li class="timeline-item">
+                            <h4 class="h4 timeline-item-title">Swami Keshvanand Institute of Technology</h4>
+                            <span>Nov. 2022 – May 2026</span>
+                            <p class="timeline-text">
+                                • Bachelor of Technology in Information Technology<br>
+                                • CGPA - 8.00 till 6th Semester<br>
+                                • Location: Jaipur, Rajasthan
+                            </p>
+                        </li>
+                        <li class="timeline-item">
+                            <h4 class="h4 timeline-item-title">St. Wilfred's School</h4>
+                            <span>April 2021 – May 2022</span>
+                            <p class="timeline-text">
+                                • 12th class<br>
+                                • Percentage - 61.00<br>
+                                • Location: Jaipur, Rajasthan
+                            </p>
+                        </li>
+                        <li class="timeline-item">
+                            <h4 class="h4 timeline-item-title">Springfield School</h4>
+                            <span>April 2019 – April 2020</span>
+                            <p class="timeline-text">
+                                • 10th class (CISCE)<br>
+                                • Percentage - 76.2%<br>
+                                • Location: Jaipur, Rajasthan
+                            </p>
+                        </li>
+                    </ol>
+                </section>
+
+                <section class="timeline">
+                    <div class="title-wrapper">
+                        <div class="icon-box"><ion-icon name="trophy-outline"></ion-icon></div>
+                        <h3 class="h3">Leadership / Extracurricular / Achievement</h3>
+                    </div>
+                    <ol class="timeline-list">
+                        <li class="timeline-item">
+                            <h4 class="h4 timeline-item-title">Non-Tech Committee Head in Pravah</h4>
+                            <span>2023 college fest</span>
+                            <p class="timeline-text">
+                                • Led and managed 25 teams during the college fest
+                            </p>
+                        </li>
+                        <li class="timeline-item">
+                            <h4 class="h4 timeline-item-title">Smart India Hackathon 2024</h4>
+                            <span>Sept 2024 - Nov 2024, Swami Keshvanand Institute of Technology</span>
+                            <p class="timeline-text">
+                                • Secured 26th position in the college prelims of SIH 2024<br>
+                                • Competed among 120 teams
+                            </p>
+                        </li>
+                        <li class="timeline-item">
+                            <h4 class="h4 timeline-item-title">LeetCode Achievements</h4>
+                            <p class="timeline-text">
+                                • Earned 100 Days Badge on LeetCode<br>
+                                • Solved 250+ problems on LeetCode
+                            </p>
+                        </li>
+                    </ol>
+                </section>
+            </article>
+
+            <article class="experience" data-page="experience">
+                <header>
+                    <h2 class="h2 article-title">Experience</h2>
+                </header>
+
+                <section class="timeline">
+                    <div class="title-wrapper">
+                        <div class="icon-box"><ion-icon name="briefcase-outline"></ion-icon></div>
+                        <h3 class="h3">Mahaveer Enterprises</h3>
+                    </div>
+
+                    <ol class="timeline-list">
+                        <li class="timeline-item">
+                            <h4 class="h4 timeline-item-title">Frontend Developer Intern</h4>
+                            <span>Feb 2025 – May 2025</span>
+                            <p class="timeline-text">
+                                • Developed a responsive product showcase website from scratch using HTML5, CSS3, and JavaScript.<br>
+                                • Gained hands-on experience in real-world UI/UX implementation and responsive design principles.<br>
+                                • Implemented and managed 500+ products on the platform with structured layouts, categories, and interactive features.
+                            </p>
+                        </li>
+                    </ol>
+                </section>
+                <section class="timeline">
+                    <div class="title-wrapper">
+                        <div class="icon-box"><ion-icon name="briefcase-outline"></ion-icon></div>
+                        <h3 class="h3">Celebal Technologies</h3>
+                    </div>
+
+                    <ol class="timeline-list">
+                        <li class="timeline-item">
+                            <h4 class="h4 timeline-item-title">Node.js Intern</h4>
+                            <span>May 2025 – July 2025, Jaipur, Rajasthan</span>
+                            <p class="timeline-text">
+                                • Gained hands-on experience with Node.js and core Express.js concepts for building scalable backend applications.<br>
+                                • Implemented JWT authentication to secure APIs and manage user sessions effectively.<br>
+                                • Built a Collaborative Code Editor as the final project, featuring real-time multi-user editing, code synchronization, and secure access control using Node.js, Express.js, and WebSockets.
+                            </p>
+                        </li>
+                    </ol>
+                </section>
+            </article>
+
+            <article class="portfolio" data-page="project">
+                <header>
+                    <h2 class="h2 article-title">Project</h2>
+                </header>
+
+                <section class="projects">
+                    <div class="filter-select-box">
+                        <button class="filter-select" data-select>
+                            <div class="select-value" data-select-value>Select Category</div>
+
+                            <div class="select-icon">
+                                <ion-icon name="chevron-down"></ion-icon>
+                            </div>
+                        </button>
+
+                        <ul class="select-list">
+                            <li class="select-item"><button data-select-item>All</button></li>
+                            <li class="select-item"><button data-select-item>Frontend</button></li>
+                            <li class="select-item"><button data-select-item>Backend</button></li>
+                            <li class="select-item"><button data-select-item>Full Stack / Backend</button></li>
+                        </ul>
+                    </div>
+
+                    <ul class="project-list">
+                        <li class="project-item active" data-filter-item data-category="full stack / backend">
+                            <figure class="project-img">
+                                <img src="chattythumbnail.png" alt="chatty" loading="lazy">
+                                <div class="project-buttons">
+                                    <a href="https://chat-app01-jhgh.onrender.com/" target="_blank" class="project-link">
+                                        <ion-icon name="eye-outline"></ion-icon>
+                                    </a>
+                                    <a href="https://github.com/nitesh2203/CHAT-APP" target="_blank" class="github-link">
+                                        <ion-icon name="logo-github"></ion-icon>
+                                    </a>
+                                </div>
+                            </figure>
+                            <h3 class="project-title">Chatty</h3>
+                            <p class="project-category">Full Stack / Backend</p>
+                        </li>
+
+                        <li class="project-item active" data-filter-item data-category="full stack / backend">
+                            <figure class="project-img">
+                                <img src="SynCode.png" alt="syncode" loading="lazy">
+                                <div class="project-buttons">
+                                    <a href="https://sync-code-mkfs.onrender.com/" target="_blank" class="project-link">
+                                        <ion-icon name="eye-outline"></ion-icon>
+                                    </a>
+                                    <a href="https://github.com/nitesh2203/Sync-Code" target="_blank" class="github-link">
+                                        <ion-icon name="logo-github"></ion-icon>
+                                    </a>
+                                </div>
+                            </figure>
+                            <h3 class="project-title">SynCode</h3>
+                            <p class="project-category">Full Stack / Backend</p>
+                        </li>
+
+                        <li class="project-item active" data-filter-item data-category="frontend">
+                            <figure class="project-img">
+                                <img src="BB.png" alt="burger beasts" loading="lazy">
+                                <div class="project-buttons">
+                                    <a href="https://elegant-klepon-6d8b23.netlify.app/" target="_blank" class="project-link">
+                                        <ion-icon name="eye-outline"></ion-icon>
+                                    </a>
+                                    <a href="https://github.com/nitesh2203/Food-App" target="_blank" class="github-link">
+                                        <ion-icon name="logo-github"></ion-icon>
+                                    </a>
+                                </div>
+                            </figure>
+                            <h3 class="project-title">Burger Beasts</h3>
+                            <p class="project-category">Frontend</p>
+                        </li>
+
+                        <li class="project-item active" data-filter-item data-category="frontend">
+                            <figure class="project-img">
+                                <img src="E-com web.png" alt="e-comm website" loading="lazy">
+                                <div class="project-buttons">
+                                    <a href="#" class="project-link">
+                                        <ion-icon name="eye-outline"></ion-icon>
+                                    </a>
+                                    <a href="https://github.com/nitesh2203/E-Comm-website" target="_blank" class="github-link">
+                                        <ion-icon name="logo-github"></ion-icon>
+                                    </a>
+                                </div>
+                            </figure>
+                            <h3 class="project-title">E-Comm Website</h3>
+                            <p class="project-category">Frontend</p>
+                        </li>
+
+                        <li class="project-item active" data-filter-item data-category="full stack / backend">
+                            <figure class="project-img">
+                                <img src="Spotify Clone.png" alt="spotify clone" loading="lazy">
+                                <div class="project-buttons">
+                                    <a href="#" class="project-link">
+                                        <ion-icon name="eye-outline"></ion-icon>
+                                    </a>
+                                    <a href="https://github.com/nitesh2203/Spotify-Clone" target="_blank" class="github-link">
+                                        <ion-icon name="logo-github"></ion-icon>
+                                    </a>
+                                </div>
+                            </figure>
+                            <h3 class="project-title">Spotify Clone</h3>
+                            <p class="project-category">Full Stack / Backend</p>
+                        </li>
+
+                        <li class="project-item active" data-filter-item data-category="frontend">
+                            <figure class="project-img">
+                                <img src="AyushVerse.png" alt="virtual garden" loading="lazy">
+                                <div class="project-buttons">
+                                    <a href="#" class="project-link">
+                                        <ion-icon name="eye-outline"></ion-icon>
+                                    </a>
+                                    <a href="https://github.com/nitesh2203/virtual-garden" target="_blank" class="github-link">
+                                        <ion-icon name="logo-github"></ion-icon>
+                                    </a>
+                                </div>
+                            </figure>
+                            <h3 class="project-title">Virtual Garden</h3>
+                            <p class="project-category">Frontend</p>
+                        </li>
+                    </ul>
+                </section>
+
+                <div style="text-align:center; margin-top: 20px;">
+                    <a href="https://github.com/nitesh2203" target="_blank" class="resume-download-btn" style="display:inline-flex;align-items:center;gap:8px;">
+                        <ion-icon name="logo-github"></ion-icon>
+                        <span>View More Projects on GitHub</span>
+                    </a>
+                </div>
+            </article>
+
+            <article class="contact" data-page="contact">
+                <header>
+                    <h2 class="h2 article-title">Contact</h2>
+                </header>
+
+                <section class="mapbox" data-mapbox>
+                    <figure>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d227748.3825624477!2d75.65046970649679!3d26.88544791796718!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396c4adf4c57e281%3A0xce1c63a0cf22e09!2sJaipur%2C%20Rajasthan!5e0!3m2!1sen!2sin!4v1709999999999!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </figure>
+                </section>
+
+                <section class="contact-form">
+                    <h3 class="h3 form-title">Contact Form</h3>
+
+                    <form action="#" class="form" data-form>
+                        <div class="input-wrapper">
+                            <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+                            <input type="email" name="email" class="form-input" placeholder="Email Address" required data-form-input>
+                        </div>
+
+                        <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input=""></textarea>
+
+                        <button class="form-btn" type="submit" disabled data-form-btn>
+                            <ion-icon name="paper-plane"></ion-icon>
+                            <span>Send Message</span>
+                        </button>
+                    </form>
+                </section>
+            </article>
+        </div>
+    </main>
+
+    <script src="main.js"></script>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init("tBESVtqCw1mII3WJZ");
+        })();
+    </script>
+</body>
+</html>
